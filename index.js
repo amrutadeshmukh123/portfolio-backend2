@@ -22,9 +22,9 @@ server.post('/send-email', async (req, res) => {
         })
 
         const mailOptions = {
-            from: "Amruta Ingle <amrutaingle175@gmail.com>",
-            to: emailTo,
-            subject: subject,
+            from: 'emailTo',
+            to: 'amrutaingle175@gmail.com',
+            subject: `$ ${fullname} is waving at you 👋`,
             // text:message
             html:
                 `
@@ -99,20 +99,21 @@ server.post('/send-email', async (req, res) => {
 <body>
    <div class="container">
     <div class="header">
-        <h2>Welcome</h2>
+        <h2>Email From Your Portfolio !!</h2>
     </div>
     <div class="mail-content">
         <p><strong>Dear Amruta ,</strong></p>
         <p>I hope you're doing well. My name is ${fullname} ! It feels nice connecting with you !
         <p>I have seen your portfolio and it looks nice !</p>
-        <p>I have some questions regarding the portfolio so mail me back, feel free to <a href="mailto:amrutaingle175@gmail.com">connect Me</a></p>
+        <p>I have some questions regarding the portfolio so mail me back : </p>
+        <p>${message}</p>
     </div>
     <div class="mail-footer">
         <p>Best Regards,</p>
         <p> ${fullname}</p>
     </div>
     <div class="footer">
-        <p>&copy; Amruta Ingle.</p>
+        <p> All rights are reserved 2025 &copy; Amruta Ingle.</p>
     </div>
    </div>
 </body>
