@@ -52,7 +52,7 @@ server.post('/send-email', async (req, res) => {
         }
         .header{
             width: 100%;
-            background: transparent;
+            background: rgb(126, 189, 247);
             border:1px solid gray;
             overflow: hidden;
             text-align: center;
@@ -89,7 +89,7 @@ server.post('/send-email', async (req, res) => {
             text-align: center;
             margin-top: 30px;
             width: 100%;
-            background: whitesmoke;
+            background: rgb(126, 189, 247);
         }
         .footer p{
             font-size: 15px;
@@ -102,14 +102,14 @@ server.post('/send-email', async (req, res) => {
         <h2>Welcome</h2>
     </div>
     <div class="mail-content">
-        <p><strong>Dear ${fullname},</strong></p>
-        <p>Nice to connect with me !</p>
-        <p>I hope you're doing well. My name is Amruta Ingle , Thank you for connect me.
-        <p>If you have any questions, feel free to <a href="mailto:amrutaingle175@gmail.com">connect us</a></p>
+        <p><strong>Dear Amruta ,</strong></p>
+        <p>I hope you're doing well. My name is ${fullname} ! It feels nice connecting with you !
+        <p>I have seen your portfolio and it looks nice !</p>
+        <p>I have some questions regarding the portfolio so mail me back, feel free to <a href="mailto:amrutaingle175@gmail.com">connect Me</a></p>
     </div>
     <div class="mail-footer">
         <p>Best Regards,</p>
-        <p>Arpita Patil</p>
+        <p> ${fullname}</p>
     </div>
     <div class="footer">
         <p>&copy; Amruta Ingle.</p>
